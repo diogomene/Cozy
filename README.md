@@ -7,8 +7,8 @@ Cozy is a project that i've been developing to be a simple PWA book reader and o
 My idea is to finish it's delopment and publish it on Netlify. Once launched, anybody will be able to use it as in your own computer, cellphone, tablet, etc.
 
 ## Future steps:
-[ ] Fix some strange mistakes on ServiceWorker (offline fallback conditions)
-[ ] Finish the application stylization
+[] Fix some strange mistakes on ServiceWorker (offline fallback conditions)
+[] Finish the application stylization
 [ ] Develop an easy way to add new books and rate them
 [ ] Develop a user-friendly reading interface
 [ ] Integrate it with some native functionalities that may help the users to read their books
