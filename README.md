@@ -16,4 +16,4 @@ My idea is to finish it's delopment and publish it on Netlify. Once launched, an
 - [ ] Think about devolop a good dark-mode, or a responsible color theme, that may attend to the user's system preferences
 
 ## Can i use the code?
-Absolutely. This project's code is interaly free-to-use. No needs to referencing, or asking for permissions of any nature
+Absolutely. This project's code is entirely free-to-use. No needs to reference, or asking for permissions of any nature
