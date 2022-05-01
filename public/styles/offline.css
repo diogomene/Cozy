@@ -1,0 +1,14 @@
+:root{
+    --alert-color: rgb(79, 12, 141);
+}
+.offline-alert{
+    margin-top: 10%;
+    color: var(--alert-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#offline-alert-icon{
+    width: 6rem;
+}

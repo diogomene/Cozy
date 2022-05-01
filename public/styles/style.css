@@ -1,0 +1,121 @@
+@import url('./fonts/courgette.css');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    outline:none !important;
+    -webkit-tap-highlight-color:rgba(0,0,0,0)
+}
+::selection {
+    color: none;
+    background: none;
+}
+::-moz-selection {
+    color: none;
+    background: none;
+}
+:root{
+    /* color variables */
+    --titleColor: rgb(96, 15, 172);
+    --backgrounColor: rgb(250, 249, 239);
+    --inactiveWhiteColor: rgb(158, 158, 158);
+    --activeWhiteColor: white;
+    --pagePadding: 2.5rem;
+}
+body{
+    background-color: var(--backgrounColor);
+    padding: 0 var(--pagePadding);
+}
+header{
+    display: flex;
+    width: 100%;
+    padding: 2rem 0;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+}
+#menu, #menu.active{
+    position: relative;
+    z-index: 200;
+    height: 25px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+#menu:hover{
+    color: var(--titleColor);
+}
+#menu.active{
+    color: var(--inactiveWhiteColor);
+}
+#menu.active:hover{
+    color: var(--activeWhiteColor);
+}
+.no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+.main-title{
+    font-size: 2rem;
+    letter-spacing: -2px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--titleColor);
+}
+.sidebar{
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transform: translateX(-20rem);
+    padding: 6rem 0rem 0 var(--pagePadding);
+    position: fixed;
+    height: 100%;
+    width: 20rem;
+    transition: all ease 0.4s
+}
+.sidebar.active{
+    transform: none;
+    background-color: var(--titleColor);
+}
+.sidebar ul{
+    list-style-type: none;
+}
+.sidebar ul li{
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-bottom: .2rem;
+    color: var(--inactiveWhiteColor);
+    transition: color ease .3s;
+}
+.sidebar ul li:hover, li.active-li{
+    color: var(--activeWhiteColor);
+}
+@media screen and (max-width: 500px){
+    body{
+        padding: 0rem 1rem;
+    }
+    header{
+        flex-direction: row-reverse;
+    }
+    .sidebar{
+        width: 14rem;
+    }
+    .dummy-container{
+        display: none;
+    }
+    .main-title{
+        margin: 0;
+    }   
+    #menu{
+        max-height: 25px;
+    }
+    #menu.active:hover{
+        color: var(--inactiveWhiteColor);
+    }
+}
