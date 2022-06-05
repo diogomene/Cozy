@@ -1,6 +1,6 @@
 # Cozy
 
-## What it is?
+## What is it?
 Cozy is a project that i've been developing to be a simple PWA book reader and organizer
 
 ## How to use it?
